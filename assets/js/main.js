@@ -417,29 +417,7 @@
 
 })(jQuery, window)
 
-     /*Send email*/ 
-     const btn = document.getElementById('button');
-
-     document.getElementById('form')
-         .addEventListener('submit', function (event) {
-             event.preventDefault();
-
-             btn.value = 'Sending...';
-
-             const serviceID = 'default_service';
-             const templateID = 'template_n00i389';
-
-             emailjs.sendForm(serviceID, templateID, this)
-                 .then(() => {
-                     btn.value = 'Send Email';
-                     alert('Sent!');
-                 }, (err) => {
-                     btn.value = 'Send Email';
-                     alert(JSON.stringify(err));
-                 });
-         });
-         
-function enviarCorreo(){
+/*function enviarCorreo(){
 	$(".alerta_correo").css('display', 'none');
 	$(".alerta_mensaje").css('display', 'none');
     $(".alerta_asunto").css('display', 'none');
@@ -483,4 +461,4 @@ function enviarCorreo(){
 			}
 		});
 	}
-}
+}*/
